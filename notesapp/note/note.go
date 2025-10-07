@@ -1,4 +1,4 @@
-package note
+package note // packages must be in their own subdirectory
 
 import (
 	"errors"
@@ -9,7 +9,7 @@ import (
 type Note struct {
 	title     string // not accessible
 	content   string // not accessible
-	createdAt time.time
+	createdAt time.Time
 }
 
 func New(title, content string) (Note, error) { // no pointer since its not big
@@ -22,7 +22,7 @@ func New(title, content string) (Note, error) { // no pointer since its not big
 		title:     title,
 		content:   content,
 		createdAt: time.Now(),
-	}
+	}, nil
 }
 
 func (note Note) Display() {
