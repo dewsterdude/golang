@@ -20,8 +20,8 @@ func GetFloatFromFile(fileName string) (float64, error) {
 		return 0, errors.New("Error reading value file")
 	}
 	valueText := string(data)
-	value, err2 := strconv.ParseFloat(valueText, 64)
-	if err2 != nil { // abscence of a useful value
+	value, err := strconv.ParseFloat(valueText, 64)
+	if err != nil { // abscence of a useful value
 		return 0, errors.New("Error converting value to number")
 	}
 

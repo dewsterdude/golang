@@ -1,0 +1,10 @@
+POST http://localhost:8080/events
+content-type: application/json  // tell server the request will contain JSON multipart/form-data
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcnR5ZEBleGFtcGxlLmNvbSIsImV4cCI6MTc2MzQ0MTk2MywidXNlcklkIjozfQ.OThvDAaaiTZSildPVUZXbVr0QVT41NE_GcD4wP5FuI8
+
+{
+  "Name": "Marty Event10",
+  "Description": "Martys test event10",
+  "Location": "Sidewalk",
+  "DateTime": "2025-11-17T10:50:00Z"
+}

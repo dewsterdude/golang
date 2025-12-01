@@ -1,0 +1,7 @@
+POST http://localhost:8080/signup
+content-type: application/json  // tell server the request will contain JSON multipart/form-data
+
+{
+  "Email": "test@example.com",
+  "Password": "testpassword"
+}
